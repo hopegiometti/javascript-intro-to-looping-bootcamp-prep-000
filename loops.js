@@ -19,12 +19,13 @@ function whileLoop(n) {
 }
 
 function doWhileLoop(i) {
-  var i = 0;
-  function incrementVariable() {
-    i = i + 1;
-    return i;
+  let i = 0;
+
   }
   do {
-    console.log("I run once regardless.");
+    function incrementVariable(){
+      i = i + 1;
+      return i;
+      console.log("I run once regardless.");
   } while (incrementVariable() < 10):
 }
